@@ -1,0 +1,260 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+video{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left: 0;
+    object-fit: cover;
+}
+.Content2{
+    display:flex;
+}
+#vid2 {
+    display: block !important;
+    width: 100%;
+}
+
+#vid1 {
+    display: none !important;
+}
+#background{
+    position:relative;
+    top:10px;
+    z-index: 3;
+    width:100px;
+    height:100px;
+    opacity:0.4;
+    border-radius: 100px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color:rgb(255, 255, 255)
+}
+.name_title{
+    position: absolute;
+    font-size: 100%;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    background: linear-gradient(45deg, rgb(99, 213, 97), rgb(129, 226, 226),rgb(236, 151, 33),rgb(215, 40, 87),rgb(18, 173, 173));
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;;
+    animation: spin 5s linear infinite;
+}
+img {
+    border-radius: 50px;
+    width: 80px; 
+    height: auto;
+}
+.body{
+    height:auto;
+    width:70vh;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    z-index: 3;
+}
+.content{
+    margin:10px;
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.title{
+    position:relative;
+    left:45%;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#nghieng{
+    font-size: 40px;
+    font-family: "Mea Culpa", cursive;
+}
+#thuong{
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Content{
+    margin:10px;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.footer{
+    font-size: 30px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#pp{
+    margin:10px;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.avatar-frame {
+    position: relative;
+    display: inline-block;
+    width: 120px;  /* Điều chỉnh kích thước */
+    height: 120px;
+}
+
+.avatar-frame img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); 
+}
+
+.avatar-frame::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 10px solid rgba(192, 109, 70, 0.8);
+    animation: glow 3s infinite alternate;
+}
+@keyframes spin {
+    0% {
+       background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes glow {
+    0% {
+        border:1px solid white;
+    }
+    25%{
+        border:3px solid rgb(151, 37, 37);
+    }
+    50%{
+        box-shadow: 0 0 30px rgb(205, 71, 71);
+    }
+    75%{
+        border:3px solid rgb(49, 185, 40);
+    }
+    100% {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+    }
+}
+
+#pp1{
+    margin-left: 10px;
+    font-size: 20px;
+}
+@media only screen and (min-width:1200px){
+    video{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right:0;
+        bottom:0;
+        left: 0;
+        object-fit: cover;
+    }
+    #vid2 {
+        display: none !important;
+    }
+    #vid1 {
+        display: block !important;
+        width: 100%;  /* Hiển thị toàn màn hình */
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        color:rgb(255, 255, 255)
+    }
+    img {
+        opacity:0.8;
+        border-radius: 50px;
+        width: 80px; 
+        height: auto;
+    }
+    .body{
+        height:auto;
+        width:70vh;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        z-index: 3;
+    }
+    .content{
+        margin:10px;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .title{
+        position:relative;
+        left:45%;
+        display:flex;
+        justify-content:space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #nghieng{
+        font-size: 40px;
+        font-family: "Mea Culpa", cursive;
+    }
+    #thuong{
+        font-family: "Pacifico", cursive;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Content{
+        margin:10px;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid white;
+    }
+    .footer{
+        font-size: 30px;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    #pp{
+        margin:10px;
+        font-size: 20px;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    #pp1{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
